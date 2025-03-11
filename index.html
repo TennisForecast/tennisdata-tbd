@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TennisForecast - Coming Soon</title>
+    <title>TennisForecast - Indian Wells 2025 Projections</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
@@ -18,51 +18,115 @@
             text-align: center;
             background-color: white;
             padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         h1 {
-            color: #2c3e50;
-            font-size: 36px;
+            color: #4B0082; /* Deep purple */
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #4B0082; /* Deep purple */
+            font-size: 26px;
+            margin-top: 25px;
         }
         p {
             color: #7f8c8d;
             font-size: 18px;
         }
         .form {
-            margin-top: 20px;
+            margin: 20px 0;
         }
         input[type="email"] {
-            padding: 10px;
-            width: 250px;
+            padding: 12px;
+            width: 260px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 16px;
         }
         button {
-            padding: 10px 20px;
-            background-color: #3498db;
+            padding: 12px 24px;
+            background-color: #32CD32; /* Lime green */
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
         button:hover {
-            background-color: #2980b9;
+            background-color: #228B22; /* Forest green */
+        }
+        table {
+            margin: 25px auto;
+            border-collapse: collapse;
+            width: 85%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 14px;
+            border: none;
+            text-align: center;
+        }
+        th {
+            background: linear-gradient(90deg, #4B0082, #9370DB); /* Purple gradient: Indigo to Medium Purple */
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        td {
+            color: #2F0047; /* Darker purple for text */
+            font-size: 16px;
+        }
+        tr:nth-child(even) {
+            background-color: #E6FFE6; /* Very light green */
+        }
+        tr:hover {
+            background-color: #98FB98; /* Pale green on hover */
+            transition: background-color 0.2s;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>TennisForecast</h1>
-        <p>Advanced tennis stats, projections, and analytics coming soon!<br>Enter your email to stay updated.</p>
+        <p>Advanced tennis stats, projections, and analytics.</p>
         <div class="form">
+            <p><strong>Sign up for exclusive updates, future projections, and more!</strong></p>
             <form action="https://formsubmit.co/forecasttennis@gmail.com" method="POST">
                 <input type="email" name="email" placeholder="Your email" required>
-                <button type="submit">Subscribe</button>
+                <button type="submit">Join Now</button>
             </form>
         </div>
+        <h2>Indian Wells 2025 R16 Projections</h2>
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Win Probability</th>
+                <th>Odds</th>
+            </tr>
+            <tr><td>Carlos Alcaraz</td><td>50.4%</td><td>-102</td></tr>
+            <tr><td>Daniil Medvedev</td><td>8.9%</td><td>+1027</td></tr>
+            <tr><td>Stefanos Tsitsipas</td><td>6.5%</td><td>+1442</td></tr>
+            <tr><td>Tommy Paul</td><td>6.1%</td><td>+1546</td></tr>
+            <tr><td>Taylor Fritz</td><td>5.5%</td><td>+1715</td></tr>
+            <tr><td>Alex De Minaur</td><td>4.8%</td><td>+1976</td></tr>
+            <tr><td>Jack Draper</td><td>4.3%</td><td>+2245</td></tr>
+            <tr><td>Holger Rune</td><td>2.8%</td><td>+3446</td></tr>
+            <tr><td>Tallon Griekspoor</td><td>2.7%</td><td>+3580</td></tr>
+            <tr><td>Ben Shelton</td><td>2.3%</td><td>+4168</td></tr>
+            <tr><td>Grigor Dimitrov</td><td>1.9%</td><td>+5071</td></tr>
+            <tr><td>Arthur Fils</td><td>1.7%</td><td>+5744</td></tr>
+            <tr><td>Marcos Giron</td><td>0.7%</td><td>+13294</td></tr>
+            <tr><td>Brandon Nakashima</td><td>0.7%</td><td>+14841</td></tr>
+            <tr><td>Yosuke Watanuki</td><td>0.3%</td><td>+33311</td></tr>
+            <tr><td>Francisco Cerundolo</td><td>0.3%</td><td>+34135</td></tr>
+        </table>
     </div>
 </body>
 </html>
