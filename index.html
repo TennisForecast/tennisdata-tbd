@@ -69,7 +69,7 @@
         table {
             margin: 25px auto;
             border-collapse: collapse;
-            width: 85%;
+            width: 90%;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -86,6 +86,11 @@
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
+        }
+        /* Fixed width for sportsbook columns */
+        th:nth-child(4), th:nth-child(5), th:nth-child(6),
+        td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+            width: 100px;  /* Uniform width for Bet365, DraftKings, FanDuel */
         }
         td {
             color: #2F0047;
@@ -116,24 +121,27 @@
             <tr>
                 <th>Player</th>
                 <th>Win Probability</th>
-                <th>Odds</th>
+                <th>True Odds</th>
+                <th>Bet365</th>
+                <th>DraftKings</th>
+                <th>FanDuel</th>
             </tr>
-            <tr><td>Carlos Alcaraz</td><td>50.0%</td><td>+100</td></tr>
-            <tr><td>Daniil Medvedev</td><td>8.8%</td><td>+1033</td></tr>
-            <tr><td>Stefanos Tsitsipas</td><td>6.4%</td><td>+1451</td></tr>
-            <tr><td>Tommy Paul</td><td>6.0%</td><td>+1559</td></tr>
-            <tr><td>Jack Draper</td><td>6.0%</td><td>+1573</td></tr>
-            <tr><td>Taylor Fritz</td><td>4.8%</td><td>+1964</td></tr>
-            <tr><td>Alex De Minaur</td><td>4.7%</td><td>+2049</td></tr>
-            <tr><td>Holger Rune</td><td>2.8%</td><td>+3493</td></tr>
-            <tr><td>Tallon Griekspoor</td><td>2.7%</td><td>+3621</td></tr>
-            <tr><td>Ben Shelton</td><td>2.2%</td><td>+4354</td></tr>
-            <tr><td>Grigor Dimitrov</td><td>1.9%</td><td>+5222</td></tr>
-            <tr><td>Arthur Fils</td><td>1.7%</td><td>+5719</td></tr>
-            <tr><td>Marcos Giron</td><td>0.7%</td><td>+13480</td></tr>
-            <tr><td>Brandon Nakashima</td><td>0.6%</td><td>+15496</td></tr>
-            <tr><td>Francisco Cerundolo</td><td>0.3%</td><td>+34030</td></tr>
-            <tr><td>Yosuke Watanuki</td><td>0.3%</td><td>+35348</td></tr>
+            <tr><td>Carlos Alcaraz</td><td>50.0%</td><td>+100</td><td></td><td>-100</td><td></td></tr>
+            <tr><td>Daniil Medvedev</td><td>8.8%</td><td>+1033</td><td></td><td>+900</td><td></td></tr>
+            <tr><td>Stefanos Tsitsipas</td><td>6.4%</td><td>+1451</td><td></td><td>+1000</td><td></td></tr>
+            <tr><td>Tommy Paul</td><td>6.0%</td><td>+1559</td><td></td><td>+1600</td><td></td></tr>
+            <tr><td>Jack Draper</td><td>6.0%</td><td>+1573</td><td></td><td>+1200</td><td></td></tr>
+            <tr><td>Taylor Fritz</td><td>4.8%</td><td>+1964</td><td></td><td>+900</td><td></td></tr>
+            <tr><td>Alex De Minaur</td><td>4.7%</td><td>+2049</td><td></td><td>+1100</td><td></td></tr>
+            <tr><td>Holger Rune</td><td>2.8%</td><td>+3493</td><td></td><td>+1800</td><td></td></tr>
+            <tr><td>Tallon Griekspoor</td><td>2.7%</td><td>+3621</td><td></td><td>+1500</td><td></td></tr>
+            <tr><td>Ben Shelton</td><td>2.2%</td><td>+4354</td><td></td><td>+1600</td><td></td></tr>
+            <tr><td>Grigor Dimitrov</td><td>1.9%</td><td>+5222</td><td></td><td>+3000</td><td></td></tr>
+            <tr><td>Arthur Fils</td><td>1.7%</td><td>+5719</td><td></td><td>+4000</td><td></td></tr>
+            <tr><td>Marcos Giron</td><td>0.7%</td><td>+13480</td><td></td><td>+4000</td><td></td></tr>
+            <tr><td>Brandon Nakashima</td><td>0.6%</td><td>+15496</td><td></td><td>+5000</td><td></td></tr>
+            <tr><td>Francisco Cerundolo</td><td>0.3%</td><td>+34030</td><td></td><td>+8000</td><td></td></tr>
+            <tr><td>Yosuke Watanuki</td><td>0.3%</td><td>+35348</td><td></td><td>+10000</td><td></td></tr>
         </table>
     </div>
 </body>
