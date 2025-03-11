@@ -16,18 +16,17 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
         }
         .container {
             text-align: center;
             background-color: white;
-            padding: 40px;
+            padding: 20px;
             border-radius: 12px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            max-width: 1200px;
+            margin: 0 auto;
         }
         h1 {
             color: #4B0082;
@@ -48,10 +47,12 @@
         }
         input[type="email"] {
             padding: 12px;
-            width: 260px;
+            width: 100%;
+            max-width: 260px;
             border: 1px solid #ddd;
             border-radius: 6px;
             font-size: 16px;
+            box-sizing: border-box;
         }
         button {
             padding: 12px 24px;
@@ -69,7 +70,7 @@
         table {
             margin: 25px auto;
             border-collapse: collapse;
-            width: 90%;
+            width: 100%;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
@@ -87,10 +88,10 @@
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        /* Fixed width for sportsbook columns */
+        /* Uniform width for sportsbook columns on desktop */
         th:nth-child(4), th:nth-child(5), th:nth-child(6),
         td:nth-child(4), td:nth-child(5), td:nth-child(6) {
-            width: 100px;  /* Uniform width for Bet365, DraftKings, FanDuel */
+            width: 100px;
         }
         td {
             color: #2F0047;
@@ -102,6 +103,40 @@
         tr:hover {
             background-color: #98FB98;
             transition: background-color 0.2s;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                width: 90%;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            th, td {
+                min-width: 80px;
+                padding: 10px;
+            }
+            th:nth-child(4), th:nth-child(5), th:nth-child(6),
+            td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+                width: auto; /* Let widths adjust on mobile */
+            }
+            input[type="email"] {
+                width: 100%;
+            }
+            .form button {
+                width: 100%;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -120,7 +155,7 @@
         <table>
             <tr>
                 <th>Player</th>
-                <th>Win Probability</th>
+                <th>Win Prob</th>
                 <th>True Odds</th>
                 <th>Bet365</th>
                 <th>DraftKings</th>
