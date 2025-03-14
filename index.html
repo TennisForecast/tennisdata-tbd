@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TennisForecast - Indian Wells 2025 Semifinal Projections</title>
+    <title>TennisForecast - Elevating Tennis Betting</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR96KL2HCL"></script>
     <script>
@@ -44,19 +44,28 @@
             margin-top: 25px;
         }
         p {
-            color: #7f8c8d;
+            color: #5f6c6d; /* Darker gray for better contrast */
             font-size: 18px;
+            line-height: 1.6;
         }
         .form {
             margin: 20px 0;
         }
-        input[type="email"] {
+        input[type="text"], input[type="email"], textarea {
             padding: 12px;
-            width: 260px;
+            width: 400px; /* Wider for desktop */
             border: 1px solid #ddd;
             border-radius: 6px;
             font-size: 16px;
             margin-bottom: 15px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        textarea {
+            width: 400px;
+            height: 100px;
+            resize: vertical;
         }
         button {
             padding: 12px 24px;
@@ -68,41 +77,10 @@
             font-size: 16px;
             transition: background-color 0.3s;
             min-width: 120px;
+            margin-top: 10px; /* Added spacing */
         }
         button:hover {
             background-color: #228B22;
-        }
-        table {
-            margin: 25px auto;
-            border-collapse: collapse;
-            width: 100%;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-        th, td {
-            padding: 14px;
-            border: none;
-            text-align: center;
-        }
-        th {
-            background: linear-gradient(90deg, #4B0082, #9370DB);
-            color: white;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        td {
-            color: #2F0047;
-            font-size: 16px;
-        }
-        tr:nth-child(even) {
-            background-color: #E6FFE6;
-        }
-        tr:hover {
-            background-color: #98FB98;
-            transition: background-color 0.2s;
         }
         @media (max-width: 768px) {
             .container {
@@ -117,7 +95,7 @@
             p {
                 font-size: 16px;
             }
-            input[type="email"] {
+            input[type="text"], input[type="email"], textarea {
                 width: 100%;
                 margin-bottom: 15px;
             }
@@ -125,14 +103,10 @@
                 width: 100%;
                 min-width: 0;
             }
-            table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-            th, td {
-                min-width: 80px;
-                padding: 10px;
+        }
+        @media (max-width: 400px) {
+            .container {
+                padding: 10px; /* Extra small screen tweak */
             }
         }
     </style>
@@ -140,28 +114,19 @@
 <body>
     <div class="container">
         <h1>TennisForecast</h1>
-        <p>Advanced tennis stats, projections, and analytics.</p>
-        <div class="form">
-            <p><strong>Sign up for exclusive updates, future projections, and more!</strong></p>
-            <form action="https://formsubmit.co/forecasttennis@gmail.com" method="POST">
-                <input type="email" name="email" placeholder="Your email" required>
-                <button type="submit">Join Now</button>
-            </form>
-        </div>
+        <p>State of the art tennis projections.</p>
+        <h2>What We Do</h2>
+        <p>At Tennis Forecast, we’re transforming tennis betting with comprehensive odds services for all markets. Powered by proprietary models, we deliver precise projections, innovative tools, and analytics across match winners, tournament futures, special props, same-game parlays (SGPs), and more. From Grand Slams to ITF events, our solutions optimize pricing accuracy, enhance live betting insights, and unlock new opportunities for every level of the sport. Partner with us to elevate your tennis betting offerings.</p>
     </div>
     <div class="container">
-        <h2>Indian Wells 2025 Semifinal Projections</h2>
-        <table>
-            <tr>
-                <th>Player</th>
-                <th>Win Prob</th>
-                <th>True Odds</th>
-            </tr>
-            <tr><td>Carlos Alcaraz</td><td>58.9%</td><td>-143</td></tr>
-            <tr><td>Daniil Medvedev</td><td>18.8%</td><td>+432</td></tr>
-            <tr><td>Jack Draper</td><td>14.4%</td><td>+595</td></tr>
-            <tr><td>Holger Rune</td><td>7.9%</td><td>+1162</td></tr>
-        </table>
+        <h2>Contact Us</h2>
+        <p>Interested in collaborating? Get in touch to explore how we can enhance your tennis betting services.</p>
+        <form action="https://formsubmit.co/forecasttennis@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </div>
 </body>
 </html>
